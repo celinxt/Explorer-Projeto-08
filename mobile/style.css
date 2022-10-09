@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --font-p: "Palanquin", sans-serif;
+  --font-s: "Staatliches", cursive;
+}
+
+/* Header */
+header {
+  background: #8e9aaf;
+  padding: 6vw 0 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+}
+
+#logo {
+  margin: auto;
+  animation: myAnim2 1s ease 0s 1 normal forwards;
+}
+
+h1 {
+  font-family: var(--font-s);
+  font-weight: 400;
+  font-size: 4rem;
+  color: #fff;
+  background: #cbc0d3;
+  text-align: center;
+}
+
+p {
+  font-family: var(--font-p);
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10vw 8vw;
+}
+
+/* Main */
+.container {
+  background: #feeafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.8rem;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+span {
+  font-family: var(--font-s);
+  font-weight: 400;
+  font-size: 2rem;
+  color: #4a4e69;
+  background: #feeafa;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: relative;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.card {
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  top: 2rem;
+  left: 23rem;
+}
+
+/* Footer */
+footer p,
+a {
+  font-family: var(--font-p);
+  color: #4a4e69;
+  background: #feeafa;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
